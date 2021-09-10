@@ -1,6 +1,7 @@
-import "../styles/discord.scss"
-import discordImg from "../assets/images/discordImg.jpg"
-
+// Images
+import discordImg from "../../assets/images/discordImg.jpg"
+// Styles
+import "./styles.scss"
 export function Discord(){
     return (
         <div className = "discord-content">
