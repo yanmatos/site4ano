@@ -1,22 +1,22 @@
-import { Header } from "../components/Header"
-import {Founders} from "../components/Founders"
-import {Discord} from "../components/Discord"
-import {Games} from "../components/Games"
-import {Opinions} from "../components/Opinions"
-import {Qualities} from "../components/Qualities"
-import "../styles/home.scss"
+// Components
+import { Header } from "../../components/Header"
+import { Founders } from "../../components/Founders"
+import { Discord } from "../../components/Discord"
+import { GamesList } from "../../components/GamesList"
+import { Opinions } from "../../components/Opinions"
+import { Qualities } from "../../components/Qualities"
+import "./styles.scss"
 
-//images Opinions
-import desenhoImage from "../assets/images/desenho.png"
-import snowmanImage from "../assets/images/snowman.png"
-import globoImage from "../assets/images/globo.png"
-import mountainImg from "../assets/images/mountain.png"
+// Opinions Images 
+import desenhoImage from "../../assets/images/desenho.png"
+import snowmanImage from "../../assets/images/snowman.png"
+import globoImage from "../../assets/images/globo.png"
+import mountainImg from "../../assets/images/mountain.png"
 
-//images Qualities
-import botsImg from "../assets/images/bots.png"
-import diversaoImg from "../assets/images/diversao.png"
-import comunidadeImg from "../assets/images/comunidade.png"
-
+// Qualities Images
+import botsImg from "../../assets/images/bots.png"
+import diversaoImg from "../../assets/images/diversao.png"
+import comunidadeImg from "../../assets/images/comunidade.png"
 
 export function Home() {
     return (
@@ -37,7 +37,7 @@ export function Home() {
                 <Qualities image = {diversaoImg} title = "Diversão" text = "Espere muita diversão no 4ano, nós buscamos a sua felicidade!"/>
             </div>
             <Founders/>
-            <Games/>
+            <GamesList/>
             <div className = "opinions-list">
             <h1 className ="title-op">Veja o que dizem os nossos membros</h1>
                 <Opinions image = {desenhoImage} text = "O servidor é muito bom, me divirto muito!" name = "João"/>

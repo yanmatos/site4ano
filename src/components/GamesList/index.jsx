@@ -1,6 +1,7 @@
-import "../styles/games.scss"
+// Styles
+import "./styles.scss"
 
-export function Games() {
+export function GamesList() {
     return (
         <div className="main-content-games">
             <h1>Jogos Populares</h1>

@@ -1,5 +1,7 @@
-import "../styles/header.scss"
-import serverLogo from "../assets/images/4anologo.png"
+// Images
+import serverLogo from "../../assets/images/4anologo.png"
+// Styles 
+import "./styles.scss"
 
 export function Header(){
     return (
