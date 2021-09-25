@@ -17,10 +17,12 @@
         color: #FFF;
         display: flex;
         align-items: center;
-        justify-content:center;
         list-style-type: none;
-        gap: 100px;
+        gap: 120px;
         overflow-x: auto;
+    }
+    .games-content::-webkit-scrollbar{
+        width:0;
     }
 
 }
