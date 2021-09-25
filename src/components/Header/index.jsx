@@ -9,7 +9,12 @@ export function Header(){
             <header className = "siteHeader">
                 <img className = "serverName" src = {serverLogo} alt = "4ano ícone"/>
                 <div className = "headerButtons">
-                    <button className = "discordButton">Servidor no Discord</button>
+                    <button 
+                    className = "discordButton"
+                    onClick = {() =>console.log('alo')}
+                    >
+                        Servidor no Discord
+                    </button>       
                 </div>
             </header>
         </div>
