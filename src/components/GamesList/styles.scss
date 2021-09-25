@@ -1,7 +1,6 @@
 .main-content-games{
     margin-top: 150px;
     margin-left: 40px;
-    margin-right: 40px;
 
     .content-games-header {
         display: flex;
@@ -18,21 +17,21 @@
         display: flex;
         align-items: center;
         list-style-type: none;
-        gap: 120px;
+        gap: 150px;
         overflow-x: auto;
 
         &::-webkit-scrollbar {
-            width: 8px;     
-            margin-top: 10px;         
+            width: 8px;             
           }
           
         &::-webkit-scrollbar-track {
-            background: #737373;      
+            background: #17171b;      
           }
           
         &::-webkit-scrollbar-thumb {
-            background-color: #121214;   
-            border-radius: 20px;   
+            background-color: #737373;   
+            border-radius: 20px;
+            border: 3px solid #17171b;
           }
     
     }
