@@ -20,9 +20,22 @@
         list-style-type: none;
         gap: 120px;
         overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            width: 8px;     
+            margin-top: 10px;         
+          }
+          
+        &::-webkit-scrollbar-track {
+            background: #737373;      
+          }
+          
+        &::-webkit-scrollbar-thumb {
+            background-color: #121214;   
+            border-radius: 20px;   
+          }
+    
     }
-    .games-content::-webkit-scrollbar{
-        width:0;
-    }
+   
 
 }
