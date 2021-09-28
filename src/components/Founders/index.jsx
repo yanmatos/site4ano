@@ -20,7 +20,7 @@ export function Founders() {
     }
 
     return (
-        <div className="fundadores-content">
+        <div className="fundadores-content" id = "founderLink">
             <h1 className = "founders-title">Fundadores</h1>
 
             <div className="founders-name">

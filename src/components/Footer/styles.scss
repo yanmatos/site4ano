@@ -1,0 +1,19 @@
+.footer-content{
+    margin-top: 30px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #121214;
+    border-top: 1px solid #737373;
+
+    .footer-message{
+        font: 500 16px "Rubik", sans-serif;
+        color: #fff;
+    }
+
+    img{
+        max-width: 150px;
+    }
+}

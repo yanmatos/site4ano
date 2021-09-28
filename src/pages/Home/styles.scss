@@ -22,6 +22,31 @@
     align-items: center;
     width: 100%;
     background-color: #121214;
+    border-bottom: 1px solid #737373;
+
+    
+
+    .right-content{
+        display: flex;
+        gap: 18px;
+        color: #fff;
+
+        .game-link{
+            cursor: pointer;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .founder-link{
+            cursor: pointer;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
     
 
     img{
@@ -34,7 +59,7 @@
         padding:12px 20px;
         color: #fff;
         border: 0;
-        border-radius: 50px;
+        border-radius: 5px;
         cursor: pointer;
         transition: 0.4s;
         

@@ -3,6 +3,7 @@ import { Founders } from "../../components/Founders"
 import { GamesList } from "../../components/GamesList"
 import { Opinions } from "../../components/Opinions"
 import { Qualities } from "../../components/Qualities"
+import { Footer } from "../../components/Footer"
 import "./styles.scss"
 
 // Opinions Images 
@@ -31,15 +32,21 @@ export function Home() {
             <div>
                 <header className="siteHeader">
                     <img className="serverName" src={serverLogo} alt="4ano ícone" />
-                    <div className="headerButtons">
-                        <Link
-                            className="discordButton"
-                            onClick={() => console.log('alo')}
-                            to="discordLink" spy={true} smooth={true} offset={50} duration={750}
-                        >
-                            Servidor no Discord
-                        </Link>
+                    <div className="right-content">
+                        <Link className="founder-link" to="founderLink" spy={true} smooth={true} offset={-50} duration={800}>Fundadores</Link>
+                        <Link className="game-link" to="gamesLink" spy={true} smooth={true} offset={-80} duration={800}>Jogos</Link>
+                        <div className="headerButtons">
+                            <Link
+                                className="discordButton"
+                                onClick={() => console.log('alo')}
+                                to="discordLink" spy={true} smooth={true} offset={-60} duration={800}
+                            >
+                                Servidor no Discord
+                            </Link>
+                        </div>
+
                     </div>
+
                 </header>
             </div>
             <main className="main-content">
@@ -65,13 +72,13 @@ export function Home() {
                 <Opinions image={globoImage} text="Não existe servidor igual a esse!" name="Sergio" />
                 <Opinions image={mountainImg} text="Esse servidor é realmente espetacular!" name="Fábio" />
             </div>
-            <div className="discord-content">
+            <div className="discord-content" id="discordLink">
                 <h2>Servidor no Discord</h2>
                 <img className="discord-img" src={discordImg} alt="logo do servidor" />
                 <div className="discord-message">Junte-se aos mais de 180 membros do servidor</div>
-                <a id="discordLink" className="discord-link" href="https://discord.gg/apJTJQmQ2D">Entrar no servidor</a>
-
+                <a className="discord-link" href="https://discord.gg/apJTJQmQ2D">Entrar no servidor</a>
             </div>
+            <Footer/>
         </div>
     )
 }
