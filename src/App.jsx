@@ -67,7 +67,7 @@ useEffect(() => {
         <Games  id={gamesVisible ? 'gamesIsVisible' : 'gamesIsntVisible'} />
         <div className="discord-content" id="discordLink">
           <h3>Embarque com a gente</h3>
-          <a className="discord-link" href="https://discord.gg/apJTJQmQ2D" target='_blank' rel='external'>Entrar no servidor</a>
+          <a className="discord-link" href="https://discord.gg/apJTJQmQ2D" target='_blank' rel='noreferrer external nofollow'>Entrar no servidor</a>
         </div>
         <Footer />
       </div>
