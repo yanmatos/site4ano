@@ -1,16 +1,16 @@
 .main-content{
-    margin-top: 150px;
-    margin-left: 40px;
+    width: 100%;
+    padding: 100px 60px;
 
-    .title-aboutUs{
-        color: #FFF;
-        font: 500 45px "Rubik", sans-serif;
+    .title-aboutUs{ 
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom:50px;
     }
 
     .about-content{
-        margin-top:15px;
-        font-size:24px;
-        color: #fff;
+       
+        font-size: 24px;
     }
     
 }
@@ -68,49 +68,6 @@
         }
     }
     
-}
-.qualities-list{
-    margin-top: 150px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    gap: 100px;
-    margin-right: 40px;
-    margin-left: 40px;
-
-.qualities{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #121214;
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
-    
-
-    img{
-        max-width: 120px;
-    }
-
-    .qualitiesTitle{
-        color: black;
-        font: 500 20px "Rubik", sans-serif;
-        margin-top: 10px;
-        color: #fff;
-
-    }
-
-    .qualitiesText{
-        color: black;
-        margin-left: 20px;
-        margin-right: 10px;
-        font: 500 20px "Rubik", sans-serif;
-        margin-top: 20px;
-        color: #737373;
-
-    }
-}
 }
 
 .opinions-list{

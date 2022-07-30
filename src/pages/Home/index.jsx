@@ -12,11 +12,6 @@ import snowmanImage from "../../assets/images/snowman.png"
 import globoImage from "../../assets/images/globo.png"
 import mountainImg from "../../assets/images/mountain.png"
 
-// Qualities Images
-import botsImg from "../../assets/images/bots.png"
-import diversaoImg from "../../assets/images/diversao.png"
-import comunidadeImg from "../../assets/images/comunidade.png"
-
 //server Image
 import serverLogo from "../../assets/images/logo4ano.png"
 
@@ -51,18 +46,14 @@ export function Home() {
             </div>
             <main className="main-content">
                 <div className="aboutUs">
-                    <h1 className="title-aboutUs">Um pouco sobre nós</h1>
-                    <h2 className="about-content">O <strong>4ano</strong> é um servidor criado em 2018 por 5 players que buscavam<br />
+                    <h2 className="title-aboutUs">Sobre o 4ano</h2>
+                    <p className="about-content">O 4ano é um servidor criado em 2018 por 5 players que buscavam<br />
                         um espaço legal para jogarem e se comunicarem, desde então o 4ano cresceu<br />
                         e se tornou mais que um servidor, se tornou um ecossistema!
-                    </h2>
+                    </p>
                 </div>
             </main>
-            <div className="qualities-list">
-                <Qualities image={comunidadeImg} title="Faça Amigos" text="O 4ano é o lugar ideal para fazer amizade com outros players!" />
-                <Qualities image={botsImg} title="Bots de música" text="O servidor possui diversos bots para você jogar ouvindo músicas!" />
-                <Qualities image={diversaoImg} title="Diversão" text="Espere muita diversão no 4ano, nós buscamos a sua felicidade!" />
-            </div>
+            <Qualities/>
             <Founders />
             <GamesList />
             <div className="opinions-list">
