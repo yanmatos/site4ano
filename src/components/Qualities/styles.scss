@@ -1,11 +1,11 @@
 .qualities {
     width: 100%;
     padding: 100px 60px;
+    background-color: #181818;
 
-    h2{
-        font-weight: 700;
+    h1 {
         font-size: 40px;
-        margin-bottom: 50px;
+        text-align: center;
     }
 
     .qualities-container {
@@ -14,9 +14,11 @@
     }
 
     .qualities-list {
+        grid-gap: 32px;
+        gap: 32px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-        grid-gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 60px;
 
         .card {
             background-color: #121214;
@@ -25,7 +27,7 @@
 
 
             svg {
-                fill: #05D63C;
+                fill: #925DF6;
                 display: block;
                 border-radius: 5px;
             }
@@ -33,11 +35,11 @@
             .description h3 {
                 color: #fff;
                 margin: 8px 0 12px 0;
+                font-size: 22px;
             }
-            
+
             .description p {
-                color: #888888;
-                font-size: 20px;
+                font-size: 18px;
             }
 
 
@@ -45,4 +47,14 @@
         }
     }
 
+}
+
+
+#qualitiesIsntVisible {
+    opacity: 0;
+}
+
+#qualitiesIsVisible {
+    opacity: 1;
+    transition: 1.5s ease-in-out;
 }

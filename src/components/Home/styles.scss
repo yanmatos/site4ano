@@ -1,0 +1,27 @@
+.background-image-content {
+    height: 110vh;
+
+    .home-container {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0 60px;
+    }
+
+    .title-home {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .home-content {
+
+        font-size: 20px;
+    }
+    
+    .freepikLink {
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        color: #fff;
+    }
+
+}

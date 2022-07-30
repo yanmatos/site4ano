@@ -1,0 +1,39 @@
+.siteHeader {
+    padding: 0 60px;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+
+
+    .serverLogo {
+        margin-top: 10px;
+        max-width: 100px;
+    }
+
+
+    .header-link {
+        height: 100%;
+        font-size: 16px;
+        background-color: #fff;
+        color: #111;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 2px;
+        cursor: pointer;
+        transition: filter 0.2s;
+    }
+
+    .header-link:hover {
+        filter: brightness(0.9);
+    }
+
+
+
+
+
+
+
+}

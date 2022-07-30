@@ -1,0 +1,20 @@
+.discord-content {
+    padding: 100px 60px;
+    text-align: center;
+    background-color: #181818;
+
+    h3 {
+        color: #888888;
+        font-size: 25px;
+    }
+
+    .discord-link {
+        color: #915CF2;
+        font-size: 45px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
