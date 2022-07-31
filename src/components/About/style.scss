@@ -1,4 +1,4 @@
-.second-container {
+.about {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,15 +18,11 @@
         }
 
         h2 {
-            font-weight: 700;
-            font-size: 40px;
             margin-bottom: 30px;
-
         }
 
         .about-text-content p {
             width: 100%;
-            font-size: 20px;
         }
 
     }
@@ -44,46 +40,43 @@
 }
 
 @media screen and (max-width: 990px) {
-    .about-container {
+    .about .about-container {
         flex-direction: column;
         align-items: center;
         gap: 20px;
 
     }
-
-    .about-container img {
-        order: -1;
-        max-width: 200px;
-    }
-
-    .about-text-content {
+    .about .about-container .about-text-content {
         text-align: center;
     }
-
 }
 
+
 @media screen and (max-width: 559px) {
-    .second-container {
+    .about{
         padding: 64px 60px;
+    }
+
+    .about .about-container .svg-img{
+        max-width: 300px;
     }
 }
 
 @media screen and (max-width: 425px) {
 
-
-    .about-container img {
-        max-width: 160px;
+    .about .about-container .svg-img{
+        max-width: 250px;
     }
 
 }
 
 @media screen and (max-width: 320px) {
-    .second-container {
+    .about {
         padding: 40px 60px;
     }
 
-    .about-container img {
-        max-width: 120px;
+    .about .about-container .svg-img{
+        max-width: 200px;
     }
 
 }

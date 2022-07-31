@@ -1,61 +1,64 @@
 import { useState, useEffect } from "react"
 
+//Components
 import { Home } from './components/Home'
 import { About } from './components/About'
 import { Qualities } from "./components/Qualities"
 import { Games } from "./components/Games"
 import { Footer } from "./components/Footer"
-import "./styles/app.scss"
 
+//scss
+import "./styles/app.scss"
 import "./styles/global.scss"
+
 
 function App() {
   const [aboutVisible, setAboutVisible] = useState(false)
   const [qualitiesVisible, setQualitiesVisible] = useState(false)
   const [gamesVisible, setGamesVisible] = useState(false)
- 
 
- 
-useEffect(() => {
+
+
+  useEffect(() => {
     const intersectionObserverAbout = new IntersectionObserver((entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-            setAboutVisible(true)
-        }
+      if (entries.some((entry) => entry.isIntersecting)) {
+        setAboutVisible(true)
+      }
     })
 
     intersectionObserverAbout.observe(document.querySelector('.about-container'))
 
     return () => intersectionObserverAbout.disconnect()
 
-}, [])
+  }, [])
 
 
-useEffect(() => {
-  const intersectionObserverQualities = new IntersectionObserver((entries) => {
+  useEffect(() => {
+    const intersectionObserverQualities = new IntersectionObserver((entries) => {
       if (entries.some((entry) => entry.isIntersecting)) {
-          setQualitiesVisible(true)
+        setQualitiesVisible(true)
       }
-  })
+    })
 
-  intersectionObserverQualities.observe(document.querySelector('.qualities-container'))
+    intersectionObserverQualities.observe(document.querySelector('.qualities-container'))
 
-  return () => intersectionObserverQualities.disconnect()
+    return () => intersectionObserverQualities.disconnect()
 
-}, [])
+  }, [])
 
 
-useEffect(() => {
+  useEffect(() => {
     const intersectionObserverGames = new IntersectionObserver((entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-            setGamesVisible(true)
-        }
+      if (entries.some((entry) => entry.isIntersecting)) {
+        setGamesVisible(true)
+      }
     })
 
     intersectionObserverGames.observe(document.querySelector('.games-container'))
 
     return () => intersectionObserverGames.disconnect()
 
-}, [])
+  }, [])
 
 
   return (
@@ -63,8 +66,8 @@ useEffect(() => {
       <div>
         <Home />
         <About id={aboutVisible ? 'aboutIsVisible' : 'aboutIsntVisible'} />
-        <Qualities  id={qualitiesVisible ? 'qualitiesIsVisible' : 'qualitiesIsntVisible'}/>
-        <Games  id={gamesVisible ? 'gamesIsVisible' : 'gamesIsntVisible'} />
+        <Qualities id={qualitiesVisible ? 'qualitiesIsVisible' : 'qualitiesIsntVisible'} />
+        <Games id={gamesVisible ? 'gamesIsVisible' : 'gamesIsntVisible'} />
         <div className="discord-content" id="discordLink">
           <h3>Embarque com a gente</h3>
           <a className="discord-link" href="https://discord.gg/apJTJQmQ2D" target='_blank' rel='noreferrer external nofollow'>Entrar no servidor</a>

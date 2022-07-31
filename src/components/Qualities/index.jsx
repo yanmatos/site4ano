@@ -3,7 +3,7 @@ import './styles.scss';
 export function Qualities(props) {
     return (
         <section className="qualities"{...props}>
-            <h1>O melhor do servidor</h1>
+            <h2>O melhor do servidor</h2>
             <div className='qualities-container' id = {props.id}>
                 <div className="qualities-list">
                     <div className='card'>

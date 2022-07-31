@@ -6,7 +6,7 @@ import { Link } from "react-scroll"
 
 export function Header() {
     return (
-        <header className="siteHeader">
+        <header className="header-container">
             <img className="serverLogo" src={serverLogo} alt="4ano ícone" />
             <div className="right-content">
                 <Link

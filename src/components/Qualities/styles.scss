@@ -3,8 +3,7 @@
     padding: 100px 60px;
     background-color: #181818;
 
-    h1 {
-        font-size: 40px;
+    h2 {
         text-align: center;
     }
 
@@ -35,14 +34,7 @@
             .description h3 {
                 color: #fff;
                 margin: 8px 0 12px 0;
-                font-size: 22px;
             }
-
-            .description p {
-                font-size: 18px;
-            }
-
-
 
         }
     }
@@ -57,4 +49,10 @@
 #qualitiesIsVisible {
     opacity: 1;
     transition: 1.5s ease-in-out;
+}
+
+@media screen and (max-width:720px){
+    .qualities .qualities-container .qualities-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }

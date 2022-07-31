@@ -1,4 +1,4 @@
-.footer-content {
+.footer-container {
     padding: 20px 60px;
     display: flex;
     justify-content: space-between;
@@ -8,5 +8,18 @@
 
     img {
         max-width: 100px;
+    }
+}
+
+@media  screen and (max-width: 559px){
+    .footer-container{
+        height: 20vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 40px 60px
+    }
+    .footer-container img{
+        max-width: 70px;
     }
 }

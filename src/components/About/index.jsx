@@ -4,7 +4,7 @@ import comunityImg from '../../assets/images/comunity.svg'
 
 export function About(props) {
     return (
-        <section className='second-container' id={props.id}>
+        <section className='about' id={props.id}>
             <div className='about-container'>
                 <img src={comunityImg} alt="comunidade" className='svg-img' />
                 <div className='about-text-content'>
